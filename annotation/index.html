@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Annotation Website</title>
+    <style>
+        /* CSS styles for the website */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        #annotation-container {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .annotation {
+            margin-bottom: 10px;
+        }
+
+        .annotation label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .annotation input[type="text"],
+        .annotation textarea {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .submit-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Data Annotation Website</h1>
+    </header>
+    
+    <main>
+        <section>
+            <h2>Annotate Data</h2>
+            <div id="annotation-container">
+                <div class="annotation">
+                    <label for="input1">Attribute 1:</label>
+                    <input type="text" id="input1">
+                </div>
+                <div class="annotation">
+                    <label for="input2">Attribute 2:</label>
+                    <textarea id="input2"></textarea>
+                </div>
+                <!-- Add more annotation fields as needed -->
+            </div>
+            <button class="submit-button" onclick="submitAnnotation()">Submit</button>
+        </section>
+    </main>
+    
+    <footer>
+        <p>© 2023 Data Annotation Website. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript code for submitting annotation data
+        function submitAnnotation() {
+            // Get values from input fields
+            var input1Value = document.getElementById('input1').value;
+            var input2Value = document.getElementById('input2').value;
+            
+            // Perform actions with the annotation data, such as saving it or sending it to a server
+            
+            // Reset input fields after submission
+            document.getElementById('input1').value = '';
+            document.getElementById('input2').value = '';
+            
+            // Display a success message or perform any other necessary actions
+            alert('Annotation submitted successfully!');
+        }
+    </script>
+</body>
+</html>
