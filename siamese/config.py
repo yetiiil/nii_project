@@ -1,8 +1,8 @@
-training_dir = "/content/drive/My Drive/data/sign_data/train"
-training_csv = "/Users/liyuxiao/Downloads/nii_project/dataset/1/"
-testing_csv = "/Users/liyuxiao/Downloads/nii_project/test_data.csv"
-testing_dir = "/Users/liyuxiao/Downloads/nii_project/dataset/1/"
-val_csv = "/Users/liyuxiao/Downloads/nii_project/val_data.csv"
-val_dir = "/Users/liyuxiao/Downloads/nii_project/dataset/1/"
+training_csv = "../siamese/data/train_data_c.csv"
+training_dir = "../dataset/2/"
+testing_csv = "../siamese/data/test_data_c.csv"
+testing_dir = "../dataset/2/"
+val_csv = "../siamese/data/val_data_c.csv"
+val_dir = "../dataset/2/"
 batch_size = 32
 epochs = 20
